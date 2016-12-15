@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;
+}
+/* 使用和模型*/
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100%;
+    min-width: 1280px;
+    font: 12px/18px "MicrosoftYaHei","微软雅黑","STXihei","华文细黑",serif;
+    background-color:#fff;
+    color:#999;
+}
+/*设置所有字体颜色、背景颜色*/
+ul li{
+    list-style: none;
+}
+/*列表的圆点设置，此处是将原点设置为空*/
+a{
+    text-decoration: none;
+    color:#999;
+}
+/*对文本进行修饰，下划线上划线等*/
+textarea{
+    resize: none;
+}
+/*是否可由用户调节属性大小*/
+@font-face {
+    font-family:'iconfont';
+    src: url('../icon/iconfont.eot');/*IE9*/
+    src: url('../icon/iconfont.eot?#iefix')format('embedded-opentype'),/*IE6-IE8*/
+         url('../icon/iconfont.woff')format('woff'),/* chrome、firefox */
+         url('../icon/iconfont.ttf')format('truetype'),/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+         url('../icon/iconfont.svg#iconfont')format('svg')/* iOS 4.1- */
+}
+/*将自定义字符输入到网页中，并兼容不同的浏览器*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*设置div左右浮动*/
+nav{
+    padding-left: 59px;
+    padding-right: 65px;
+    width:100%;
+    height: 58px;
+    background:#2c3e50 ;
+    display: inline-block;
+    z-index: 9999;
+}
+/*background-color: #0a1b2f;*/
+nav .active,
+nav ul li a:hover{
+    border-bottom:5px #E74F4D solid;
+    color:#E74F4D ;
+    text-decoration : none;
+}
+nav a:hover{
+    text-decoration : none;
+}
+nav a:visited{
+    text-decoration:none;
+}
+    /*鼠标悬停特效*/
+
+
+nav .nw-brand{
+    height: 100%;
+    font-size:21px;
+    color: #000;
+    font-weight:200;
+    font-family:"STXihei","华文细黑",serif;
+    vertical-align:top;
+}
+nav .nw-brand .navTitle{
+    position: relative;
+    top: 18px;
+}
+    nav .nw-brand img,
+    nav .login img{
+        vertical-align:top;
+    }
+nav ul{
+    font-size: 14px;
+    float: right;
+    padding-right: 50px;
+}
+nav ul:after{
+    content: "";display: table;
+    clear: both;
+}
+/*为ul标签添加而外属性*/
+    nav ul li{
+        float: left;
+        text-align: center;
+        padding-right: 20px;
+    }
+    nav ul li a{
+        display: inline-block;
+        height: 58px;
+        line-height: 58px;
+        padding: 0 20px;
+        transition: all ease-in-out 0.4s;
+    }
+    /*指针悬停动画  ease-in-out 规定以慢速开始和结束的过渡效果*/
+    .login{
+        color: #E74F4D;
+    }
+#sick.affix{
+    position: fixed;
+    top: 0px;
+    width: 100%
+}
+    /*面门*/
+.nw-banner{
+    width: 100%;
+    height: 700px;
+    background-image: url("../picture/universe.jpg");
+    background-size: cover;
+}
+    .nw-banner .mask{
+        display: table;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,0.2) ;
+    }
+        .nw-banner .mask .intro{
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            padding-left:120px ;
+            color: #fff;
+            font-size: 21px;
+        }
+            .nw-banner .mask .intro h1{font-size: 60px;}
+            .nw-banner .mask .intro p {list-height:0.5em;}
+            .nw-banner .mask .intro button{
+                margin-top: 50px;
+                width: 100px;
+                height: 55px;
+                background-color:transparent;
+                outline: none;
+                border: 1px white solid;
+                font-size: 30px;
+                color: #fff;
+                cursor:pointer;
+                transition: color ease-out 0.4s;
+                font-size: 15px;
+                border-radius: 8px;
+            }
+            .nw-banner .mask .intro button:hover{
+                border: 1px #E74F4D solid;
+                color: white;
+                background-color:#E74F4D;
+            }
+.nw-banner .mask .intro .button1{
+    margin-right: 100px;
+}
+/*第一个div*/
+.nw-section-1 {
+    padding: 80px 0;
+    background-color:  #EDEDEC;
+    display:flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+.nw-section-1 .aboutMe{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #2c3e50;
+}
+.nw-section-1 .myPhoto img {
+    margin-top: 40px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+.nw-section-1 .textOne{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #2c3e50;
+}
+.nw-section-1 .textOne p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.nw-section-1 .divider-1{
+    width: 70px;margin: 1em 0;
+    border: 2px #E74F4D solid;
+}
+.nw-section-1 .downLoad button{
+    margin-top: 50px;
+    width: 120px;
+    height: 55px;
+    background-color:transparent;
+    outline: none;
+    border: 1px #2c3e50 solid;
+    font-size: 30px;
+    color: #2c3e50;
+    cursor:pointer;
+    transition: color ease-out 0.4s;
+    font-size: 15px;
+    border-radius: 8px;
+}
+.nw-section-1 .downLoad button:hover{
+    border: 1px #2c3e50 solid;
+    color: white;
+    background-color:#2c3e50;
+}
+.nw-section-1 .downLoad #Dfirst{
+    margin-right: 80px;
+}
+.nw-section-1 .downLoad #Dsecond{
+    margin-left: 80px;
+}
+
+/* Skills Section */
+.nw-section-2{
+    background: url(../picture/skills-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:700px;
+    width:100%;
+}
+.nw-section-2 .mySkill{
+    display:flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: #2c3e50;
+}
+.nw-section-2 .divider-2{
+    width: 70px;margin: 1em 0;
+    border: 2px #E74F4D solid;
+}
+#content {
+    margin-top: -50px;
+    margin-left: 250px;
+    width:900px;
+    height:450px;
+}
+
+.legend {
+    float:left;
+    width:250px;
+    margin-top:90px;
+    margin-right: 50px;
+}
+
+#content h1 {
+    font-family:'Cabin Sketch', arial, serif;
+    text-shadow:3px 3px 0 #ddd;
+    color:#193340;
+    font-size:40px;
+    margin-bottom:40px;
+    text-align:right;
+}
+
+.skills {
+    float:left;
+    clear:both;
+    width:100%;
+}
+
+.skills ul,
+.skills li {
+    display:block;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.skills li {
+    float:right;
+    clear:both;
+    padding:0 15px;
+    height:35px;
+    line-height:35px;
+    color:#fff;
+    margin-bottom:1px;
+    font-size:18px;
+}
+
+.skills .jq {
+    background:#97BE0D;
+}
+
+.skills .css {
+    background:#D84F5F;
+}
+
+.skills .html {
+    background:#88B8E6;
+}
+
+.skills .php {
+    background:#BEDBE9;
+}
+
+.skills .sql {
+    background:#EDEBEE;
+}
+.get{
+    color:transparent;
+}
+/**结束MySkill**/
+
+/*
+    -moz代表firefox浏览器私有属性
+    -ms代表IE浏览器私有属性
+    -webkit代表chrome、safari私有属性
+    -o代表opera的私有属性
+    提高兼容性
+*/
+/* Begin Section-3 action*/
+.nw-section-3{
+    width:100%;
+    height:700px;
+}
+.nw-section-3 .myResume{
+    display:flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: #2c3e50;
+}
+.nw-section-3 .divider-3{
+    width: 70px;margin: 1em 0;
+    border: 2px #E74F4D solid;
+}
+.nw-section-3 .RPicture{
+    float: left;
+
+}
+.nw-section-3 .RPicture img{
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+}
+.nw-section-3 .RPicture .sues{
+    padding-bottom: 50px;
+}
+.nw-section-3 .RText{
+    float: right;
+}
+.nw-section-3 .RText .university{
+    font-size: 20px;
+    padding-top: 50px;
+}
+.nw-section-3 .RText .university .UName{
+    color: #2c3e50;
+}
+.nw-section-3 .RText .university .UProject{
+    color:#E74F4D ;
+}
+.nw-section-3 .RText .university .UText{
+    color: #2c3e50;
+}
+.nw-section-3 .RText .firstCampany{
+    font-size: 20px;
+    padding-top: 150px;
+}
+.nw-section-3 .RText .firstCampany .FCName{
+    color: #2c3e50;
+}
+.nw-section-3 .RText .firstCampany .FCWorkName{
+    color:#E74F4D ;
+}
+.nw-section-3 .RText .firstCampany .FCWorkContent{
+    color: #2c3e50;
+}
+/* End Section-3 action*/
+/* Begin Section-4 action*/
+.action{
+    height: 750px;
+    width: 100%;
+    background-color:  #f7f7f7;
+
+}
+.action .at{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.action .myDemo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: #2c3e50;
+}
+.action .myDemo .divider-4{
+    width: 70px;margin: 1em 0;
+    border: 2px #E74F4D solid;
+}
+    .action .action-item{
+        text-align: center;
+        margin-right: 45px;
+    }
+        .action .action-item .img-scan{
+            border: 1px #dadada solid;
+            padding: 13px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+            .action .action-item .img-scan img{
+                -webkit-transition: all ease-out 1s;
+                -o-transition: all ease-out 1s;
+                transition: all ease-out 1s;
+            }
+            .action .action-item .img-scan img:hover{
+                -webkit-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+        .action .action-item .title{
+            padding: 10px 0;
+        }
+            .action .action-item .title span{
+                font-size: 14px;
+            }
+/* End Section-4 action*/
+
+/* Begin Section-7 contact*/
+.text-center{
+    background: url("../picture/外滩1-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+  
+/* End Section-7 contact*/
+/* Begin footer*/
+footer{
+    background-color: #303039;
+    height: 60px;
+    padding: 0 90px;
+}
+footer:after{content: ""; display: table; clear: both; }
+footer span{line-height: 60px;}
+/* End footer*/

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HankTao</title>
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/raphael.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/campany.js"></script>
+    <link rel="stylesheet" href="css/newworld.css">
+</head>
+<body>
+
+
+
+<header>
+    <div class="nw-banner">
+        <div class="mask">
+            <a name="mao0"></a>
+            <div class="intro">
+             <h1>Hi!&nbsp  Welcome</h1>
+                <p>您好，我是覃瀚涛，欢迎来到我的个人主页</p>
+                <p>我是一名web前端开发师</p>
+               <a href="#mao1"><button class="button1">About me</button></a>
+                <a href="#mao4"> <button>My Demo</button></a>
+
+            </div>
+        </div>
+    </div>
+    </header>
+
+<nav id="sick" data-spy="affix" data-offset-top="690">
+    <a class="nw-brand" href="#mao0">
+        <img src="picture/muxing.png" alt="logo">
+        <span class="navTitle">HankTao</span>
+    </a>
+    <ul>
+
+        <li><a href="#mao1">关于我</a></li>
+        <li><a href="#mao2">我的技能</a></li>
+        <li><a href="#mao3">我的履历</a></li>
+        <li><a href="#mao4">我的作品</a></li>
+        <li><a href="#mao5">联系我</a></li>
+    </ul>
+</nav>
+
+    <div class="nw-section-1">
+        <a name="mao1"></a>
+        <div class="aboutMe">
+
+            <p>ABOUT ME</p>
+        </div>
+        <span class="divider-1"></span>
+       <div class="myPhoto">
+           <img src="picture/myPhotoC.jpg">
+       </div>
+        <div class="textOne">
+            <p>您好，我叫覃瀚涛，很高兴您能浏览我的个人主页。</p>
+
+            <p> 我十分喜欢前端开发，它既能体现代码逻辑的美，也能表现视觉上的设计美。<br>
+                我希望能成为一名优秀的前端开发工程师，创造实用、先进、美观的产品。
+            </p>
+            <p> 在校期间和毕业之后，我不断地学习前端方面的知识，并学以致用，制作了一些线上线下的项目。<br>
+                对于基础原生HTML、CSS和JS我能熟练的掌握和运用。在此基础上，进一步学习了BootStrap3的CSS框架，以及<br>
+                jQuery和AngularJS等常用的JS框架。目前正在学习Node.js有关的知识。
+            </p>
+            <p> 在编程方面，目前熟悉的前端编辑和调试软件有WS，DW和Brackets。习惯使用Git管理代码，对 Web 标准以及 Web 页<br>
+                面的可用性/可访问性有自己一定的理解，开发中遵循平稳退化渐进增强的原则。并且对界面设计感决不妥协。
+             </p>
+            <p>
+                目前为2016应届毕业生，正在寻找一份合适的前端工作，加入您认为我符合你们的要求，请给我一个创造价值和提升技术能力的机会。
+            </p>
+        </div>
+        <div class="downLoad">
+            <button id="Dfirst">下载完整简历</button>
+            <button id="Dsecond">网页版简历</button>
+        </div>
+    </div>
+<!--skill-->
+<div  class="nw-section-2">
+    <a name="mao2"></a>
+<div    class="mySkill">
+    <p>My Skill</p>
+    <span class="divider-2"></span>
+</div>
+<div id="content">
+    <div class="legend">
+        <h1>Legend:</h1>
+        <div class="skills">
+            <ul>
+                <li class="jq">JavaScript</li>
+                <li class="css">CSS3</li>
+                <li class="html">HTML5</li>
+                <li class="php">Java</li>
+                <li class="sql">SQL</li>
+            </ul>
+        </div>
+    </div>
+    <div id="diagram"></div>
+</div>
+
+
+<div class="get">
+    <div class="arc">
+        <span class="text">JavaScrip</span>
+        <input type="hidden" class="percent" value="80" />
+        <input type="hidden" class="color" value="#97BE0D" />
+    </div>
+    <div class="arc">
+        <span class="text">CSS3</span>
+        <input type="hidden" class="percent" value="90" />
+        <input type="hidden" class="color" value="#D84F5F" />
+    </div>
+    <div class="arc">
+        <span class="text">HTML5</span>
+        <input type="hidden" class="percent" value="95" />
+        <input type="hidden" class="color" value="#88B8E6" />
+    </div>
+    <div class="arc">
+        <span class="text">Java</span>
+        <input type="hidden" class="percent" value="70" />
+        <input type="hidden" class="color" value="#BEDBE9" />
+    </div>
+    <div class="arc">
+        <span class="text">SQL</span>
+        <input type="hidden" class="percent" value="55" />
+        <input type="hidden" class="color" value="#EDEBEE" />
+    </div>
+</div>
+</div>
+<!--结束MySkill -->
+
+<!--开始My Resume -->
+    <div class="nw-section-3">
+        <a name="mao3"></a>
+        <div class="myResume">
+            <p>My Resume</p>
+            <span class="divider-3"></span>
+        </div>
+        <div class="RPicture">
+            <div class="sues">
+                <img src="picture/sues.jpg">
+            </div>
+            <div class="MBP">
+                <img src="picture/mbp.jpg">
+            </div>
+        </div>
+        <div class="RText">
+        <div class="university">
+            <p class="UName">我于2016年7月毕业于上海工程技术大学</p>
+            <p class="UProject">计算机科学与技术专业</p>
+            <p class="UText">在校期间笃学不倦，乐于对钻研各类技术。<br>
+                主要掌握的知识技能有web前端开发，Android开发，JavaEE</p>
+        </div>
+        <div class="firstCampany">
+            <p class="FCName">我于2016年2月至2016年7月在上海现代商友软件集团实习（MBP）</p>
+            <p class="FCWorkName">Java实习生</p>
+            <p class="FCWorkContent">实习期间主要负责Java数据的后台编写，使用Struts2和Spring框架，用SVN<br>
+                                        与公司服务器进行数据交换。编写简单的HTML+CSS表单网页和原生JS业务逻辑。
+            </p>
+            <a name="mao4"></a>
+        </div>
+        </div>
+    </div>
+
+<!--End My Resume -->
+<!--Begin My Demo -->
+    <div class="nw-section-4 action">
+        <div class="myDemo">
+            <p>My Demo</p>
+            <span class="divider-4"></span>
+        </div>
+        <div class="at">
+        <div class="action-item">
+            <div class="img-scan">
+                 <img src="picture/工技大电竞社.jpg">
+            </div>
+            <div class="title">
+                <h4>工技大电竞社官网早期版本</h4>
+                <span>使用Bootstarp3和jQuery编写</span>
+            </div>
+        </div>
+
+        <div class="action-item">
+            <div class="title">
+                <h4>购物车Demo</h4>
+                <span>使用Bootstarp3和AngularJs编写</span>
+            </div>
+            <div class="img-scan">
+                <img src="picture/购物车.jpg">
+            </div>
+        </div>
+            <div class="action-item">
+                <div class="img-scan">
+                    <img src="picture/myTable.jpg">
+                </div>
+                <div class="title">
+                    <h4>表格生成器Demo</h4>
+                    <span>使用jQuery编写</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--End My Demo -->
+<!--Begin  contact -->
+<div id="contact" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Contact me</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcommodo.</p>
+        </div>
+        <a name="mao5"></a>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
+                <p>321 Awesome Street<br>
+                    New York, NY 17022</p>
+            </div>
+            <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+                <p>info@companyname.com</p>
+            </div>
+            <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+                <p> +1 800 123 1234</p>
+            </div>
+            <hr>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <h3>Leave me a message</h3>
+            <form name="sentMessage" id="contactForm" novalidate>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div id="success"></div>
+                <button type="submit" class="btn btn-default">Send Message</button>
+            </form>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <span class="left">@2016新世界</span>
+        <span class="right">Back to top</span>
+    </footer>
+</body>
+</html>
