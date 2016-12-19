@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-width: 1280px;
+    font: 12px/18px "MicrosoftYaHei","微软雅黑","STXihei","华文细黑",serif;
+    background: #15161a;
+    color:#1a1b1e;
+}
+ul li{
+    list-style: none;
+}
+/*列表的圆点设置，此处是将原点设置为空*/
+a{
+    text-decoration: none;
+    color:#999;
+}
+nav{
+    padding-left: 59px;
+    padding-right: 65px;
+    width: 100%;
+    height: 80px;
+    background:#1a1b1e ;
+    display: inline-block;
+}
+/*background-color: #0a1b2f;*/
+nav .active,
+nav ul li a:hover:not(.login){
+    text-decoration : none;
+    color:#C20813 ;
+}
+nav  ul li a:visited{
+    text-decoration : none;
+    color:#7c7a7b ;
+}
+nav .nw-brand a:hover{
+    color:transparent;
+}
+/*鼠标悬停特效*/
+
+
+nav .nw-brand{
+    display:inline-block;
+    font-size:21px;
+    color:#7c7a7b;
+    font-weight:200;
+    font-family:"STXihei","华文细黑",serif;
+    vertical-align:top;
+}
+nav .nw-brand img{
+    height: 80px;
+    width: 80px;
+    margin-top: 4px;
+    margin-left: -20px;
+}
+nav .nw-brand span{
+    margin-left: 20px;
+    font-family: 黑体;
+    font-size:30px;
+}
+nav ul{
+    display: inline-block;
+    font-size: 14px;
+    float: right;
+    color:#7c7a7b;
+}
+nav  ul:after{
+    content: "";display: table;
+    clear: both;
+
+}
+/*为ul标签添加而外属性*/
+nav  ul{
+    margin-right: 300px;
+}
+nav  ul li{
+
+    margin-top: 10px;
+    display: inline-block;
+    color:#7c7a7b;
+}
+nav  ul li a{
+    color:#7c7a7b;
+    display: inline-block;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 30px;
+    transition: all ease-in-out 0.4s;
+}
+
+.face img{
+    width: 100%;
+    height: 650px;
+}
+
+.main .title{
+    padding-left: 20px;
+    border-left: 2px #c20813 solid;
+    font-family: 黑体;
+    color: white;
+    font-size: 18px;
+    height: 25px;
+    margin-top: 80px;
+    margin-left: 95px;
+}
+
+.main .wen{
+    color: white;
+    margin-left: 95px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.main .word{
+    color: white;
+    font-size: 15px;
+    margin-left: 95px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+footer{
+    background-color: black;
+    height: 60px;
+    padding: 0 90px;
+    width: 100%;
+}
+footer .last .titleF{
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
