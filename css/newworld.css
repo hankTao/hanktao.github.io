@@ -188,6 +188,7 @@ nav ul:after{
     font-size: 18px;
     font-family: "微软雅黑";
     color: #2c3e50;
+    text-align: center;
 }
 .nw-section-1 .textOne p{
     margin-top: 20px;
