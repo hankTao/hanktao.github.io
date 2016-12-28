@@ -71,7 +71,7 @@ nav a:visited{
 nav .nw-brand{
     height: 100%;
     font-size:21px;
-    color: #000;
+    color: white;
     font-weight:200;
     font-family:"STXihei","华文细黑",serif;
     vertical-align:top;
@@ -113,7 +113,7 @@ nav ul:after{
 #sick.affix{
     position: fixed;
     top: 0px;
-    width: 100%
+    width: 1366px;
 }
     /*面门*/
 .nw-banner{
